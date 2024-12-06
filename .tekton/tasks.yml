@@ -55,5 +55,5 @@ spec:
           #!/bin/bash
           set -e
           python -m pip install --upgrade pip wheel
-          pip install -r ci-cd-final-project/requirements.txt
+          pip install -r $(params.args)/requirements.txt
           nosetests $(params.args)
